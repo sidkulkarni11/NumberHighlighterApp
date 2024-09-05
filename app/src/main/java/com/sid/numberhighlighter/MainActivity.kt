@@ -15,7 +15,6 @@ import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
-    data class NumberModel(val value: Int, var isHighlighted: Boolean = false)
 
     private val viewModel: NumberViewModel by viewModels()
     private lateinit var adapter: NumberAdapter
